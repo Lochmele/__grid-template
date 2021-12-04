@@ -1,0 +1,10 @@
+.skills__container {
+  display: grid;
+  margin-bottom: 20px;
+  grid-auto-rows: calc(33.33vh - 13.3333px);
+}
+
+.skills__actions {
+  display: flex;
+  justify-content: center;
+}
