@@ -12,10 +12,14 @@
 
   transition: background-color 0.5s;
   letter-spacing: 0.1em;
+
   @include lg-min {
     font-size: 1.125rem;
   }
   &--light {
+    border: 2px solid $color-light;
+    background-color: rgba($color-light, 0.1);
+
     @include lg-min {
       width: 250px;
       height: 60px;
@@ -28,14 +32,13 @@
       width: 170px;
       height: 40px;
     }
-
-    border: 2px solid $color-light;
-    background-color: rgba($color-light, 0.1);
   }
   &--primary {
     height: 60px;
+
     border: 2px solid $color-primary;
     background-color: rgb($color-primary, 0.8);
+
     @include sm-min {
       min-width: 350px;
     }
