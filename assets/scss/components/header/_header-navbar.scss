@@ -2,28 +2,27 @@
 @use "../../mixins" as *;
 
 .header-navbar {
-  /*background-color: green;*/
   &__btn {
     display: none;
   }
   &__list {
-    margin: 0 -10px 0 0;
-    padding: 0;
-    list-style: none;
     display: grid;
-    justify-content: flex-end;
-    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-    gap: 20px;
+    justify-content: end;
+
+    gap: $gap;
+    grid-template-columns: repeat(auto-fit, minmax(2em, max-content));
+    @include unlist(0 -10px 0);
   }
-  &__item {
-  }
+
   &__link {
-    padding: 20px 11px;
     display: block;
-    /* background-color: rosybrown;*/
-    letter-spacing: 0.08em;
-    font-size: 1.125rem;
+
+    padding: $gap $gap-sm;
+
     transition: color 0.25s;
+
+    font-size: 1.125rem;
+
     &:hover,
     &:focus {
       color: #d66926;
