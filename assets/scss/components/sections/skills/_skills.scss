@@ -1,3 +1,6 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
 .skills__container {
   display: grid;
   margin-bottom: 20px;

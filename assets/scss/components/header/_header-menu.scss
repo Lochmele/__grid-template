@@ -1,3 +1,6 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .header-menu {
   /*background-color: orange;*/
 
@@ -11,5 +14,7 @@
     gap: 20px;
     grid-template-columns: auto 1fr;
     align-items: center;
+
+    @extend %container;
   }
 }
